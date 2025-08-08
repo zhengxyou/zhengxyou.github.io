@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的应用作品集</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4361ee;
+            --primary-light: #4895ef;
+            --dark: #1e1e24;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background-color: #f5f7fa;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 简洁导航 */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* 主要内容 */
+        main {
+            padding: 60px 0;
+        }
+
+        .page-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 40px;
+            text-align: center;
+            color: var(--primary);
+        }
+
+        /* 应用作品网格 */
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .app-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .app-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .app-content {
+            padding: 20px;
+        }
+
+        .app-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .app-description {
+            color: var(--gray);
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        .app-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .app-category {
+            background-color: #e9ecef;
+            color: var(--dark);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .app-links {
+            display: flex;
+            gap: 10px;
+        }
+
+        .app-link {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: #f1f3f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            transition: all 0.3s;
+        }
+
+        .app-link:hover {
+            background-color: var(--primary);
+            color: white;
+            transform: scale(1.1);
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .footer-text {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .apps-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .page-title {
+                font-size: 2rem;
+            }
+            
+            .nav-links {
+                gap: 15px;
+            }
+        }
+		.disabledApp{
+		color:#979da3
+		}
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container header-content">
+            <a href="#" class="logo">My App</a>
+            <div class="nav-links">
+                <a href="#">首页</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主要内容 -->
+    <main class="container">
+        <h1 class="page-title"></h1>
+        
+        <div class="apps-grid">
+            <!-- 应用1 -->
+            <div class="app-card">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                     alt="价格计算器" class="app-image">
+                <div class="app-content">
+                    <h3 class="app-title">价格计算器</h3>
+                    <p class="app-description">
+                        将平常购物遇到的价格换算成标准化价格，如每升多少钱，每kg多少钱
+                    </p>
+                    <div class="app-meta">
+                        <span class="app-category">工具</span>
+                        <div class="app-links">
+                            <a href="#" class="app-link disabledApp" title="App Store">
+                                <i class="fab fa-apple"></i>
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.zhengxyou.weightprice" class="app-link" title="Google Play">
+                                <i class="fab fa-google-play"></i>
+                            </a>
+                            <a href="#" class="app-link disabledApp" title="了解更多">
+                                <i class="fas fa-info"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 应用2 -->
+            <div class="app-card">
+                <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                     alt="倒数日" class="app-image">
+                <div class="app-content">
+                    <h3 class="app-title">倒数日</h3>
+                    <p class="app-description">
+                        一个帮你记录、提醒生活中重要日子的小工具，帮你避免错过重要的日子。
+                    </p>
+                    <div class="app-meta">
+                        <span class="app-category">工具</span>
+                        <div class="app-links">
+                            <a href="#" class="app-link" title="App Store">
+                                <i class="fab fa-apple disabledApp"></i>
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.zhengxyou.daoshuri" class="app-link" title="Google Play">
+                                <i class="fab fa-google-play"></i>
+                            </a>
+                            <a href="#" class="app-link" title="了解更多">
+                                <i class="fas fa-info disabledApp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 应用3 -->
+            <div class="app-card">
+                <img src="https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                     alt="记下帐" class="app-image">
+                <div class="app-content">
+                    <h3 class="app-title">记下帐</h3>
+                    <p class="app-description">
+                        界面简洁，收支一目了然。功能多样，操作简单，轻松上手。
+                    </p>
+                    <div class="app-meta">
+                        <span class="app-category">工具</span>
+                        <div class="app-links">
+                            <a href="#" class="app-link disabledApp" title="App Store">
+                                <i class="fab fa-apple"></i>
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.zhengxyou.bookkeeping" class="app-link" title="Google Play">
+                                <i class="fab fa-google-play"></i>
+                            </a>
+                            <a href="#" class="app-link disabledApp" title="了解更多">
+                                <i class="fas fa-info"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 应用4 -->
+            <div class="app-card">
+                <img src="https://images.unsplash.com/photo-1555421689-3f034debb7a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                     alt="敬请期待" class="app-image">
+                <div class="app-content">
+                    <h3 class="app-title">敬请期待</h3>
+                    <p class="app-description">
+                        正在开发中,敬请期待
+                    </p>
+                    <div class="app-meta">
+                        <span class="app-category">敬请期待</span>
+                        <div class="app-links">
+                            <a href="#" class="app-link disabledApp" title="App Store">
+                                <i class="fab fa-apple"></i>
+                            </a>
+                            <a href="#" class="app-link disabledApp" title="Google Play">
+                                <i class="fab fa-google-play"></i>
+                            </a>
+                            <a href="#" class="app-link disabledApp" title="了解更多">
+                                <i class="fas fa-info"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <p class="footer-text">© 2025 我的应用作品集 | 保留所有权利</p>
+        </div>
+    </footer>
+</body>
+</html>
