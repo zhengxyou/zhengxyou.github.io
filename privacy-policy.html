@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>智簿 — 隐私权政策</title>
+  <meta name="description" content="智簿（AI 记账）Android 应用的隐私权政策" id="meta-desc" />
+  <style>
+    :root {
+      --text: #1a1a1a;
+      --muted: #5c5c5c;
+      --border: #e8e8e8;
+      --bg: #fafafa;
+      --accent: #1565c0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      color: var(--text);
+      background: var(--bg);
+    }
+    body[lang-flow="en"] {
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    }
+    .wrap {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+    .lang-bar {
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.5rem;
+      align-items: center;
+      font-size: 0.9rem;
+      margin-bottom: 0.75rem;
+    }
+    .lang-bar button {
+      background: none;
+      border: none;
+      color: var(--accent);
+      cursor: pointer;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      font: inherit;
+      padding: 0.15rem 0.35rem;
+    }
+    .lang-bar button:hover { text-decoration: none; }
+    .lang-bar button[aria-current="true"] {
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--text);
+      cursor: default;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.25rem;
+      margin-bottom: 1.75rem;
+    }
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin: 0 0 0.5rem;
+      letter-spacing: -0.02em;
+    }
+    .meta {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin: 2rem 0 0.75rem;
+      color: var(--text);
+    }
+    p, li { margin: 0.6rem 0; }
+    ul { padding-left: 1.25rem; }
+    a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+    a:hover { text-decoration: none; }
+    .placeholder {
+      background: #fff3cd;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="lang-bar" role="navigation" aria-label="Language">
+      <button type="button" id="btn-zh">中文</button>
+      <span aria-hidden="true">|</span>
+      <button type="button" id="btn-en">English</button>
+    </div>
+
+    <article id="policy-zh" lang="zh-CN">
+      <header>
+        <h1>智簿 隐私权政策</h1>
+        <p class="meta">生效日期：2026 年 4 月 11 日 · 最近更新：2026 年 4 月 11 日</p>
+      </header>
+
+      <p>
+        欢迎您使用「智簿」（以下简称「本应用」）。我们重视您的个人信息与隐私保护。本政策说明在您使用本应用时，我们如何收集、使用、存储与保护相关信息。使用本应用即表示您已阅读并理解本政策。若您不同意，请停止使用本应用。
+      </p>
+
+      <h2>一、运营主体与适用范围</h2>
+      <p>
+        本政策适用于您通过 Google Play 或其他渠道安装的「智簿」Android 应用程序（应用包名：<code>com.zhengxyou.aiautobookkeeping</code>）。
+      </p>
+      <ul>
+        <li>运营者名称：ZHENG XIANGYOU</li>
+        <li>联系邮箱：<a href="mailto:zhengxyou@gmail.com">zhengxyou@gmail.com</a></li>
+      </ul>
+
+      <h2>二、我们处理的信息与系统权限</h2>
+      <p>本应用以<strong>本地记账</strong>为主，核心财务数据默认保存在您的设备中。在您主动使用相关功能时，我们可能通过 Android 系统权限访问以下信息：</p>
+      <ul>
+        <li><strong>相机（CAMERA）</strong>：用于为记账记录拍摄或附加图片凭证；在共享账本等场景中，用于扫描<strong>二维码</strong>以完成加入或邀请流程。相关图像仅在您使用功能时在设备侧处理，我们不会将相机画面用于与本功能无关的目的。</li>
+        <li><strong>存储读取（READ_EXTERNAL_STORAGE，仅 Android 12 及以下部分系统）</strong>：用于在您主动选择时读取<strong>账单导入文件</strong>（如 CSV、Excel）或<strong>图片</strong>等，不会全盘扫描您的设备文件。</li>
+        <li><strong>通知（POST_NOTIFICATIONS）</strong>：用于向您发送您已开启的<strong>提醒类通知</strong>（例如预算、定时记账、待办、借贷到期、周期报告等本地提醒）。您可随时在系统设置中关闭通知权限。</li>
+        <li><strong>网络与 WLAN 相关权限（INTERNET、ACCESS_NETWORK_STATE、ACCESS_WIFI_STATE、CHANGE_WIFI_MULTICAST_STATE）</strong>：用于您主动使用的<strong>需要联网或局域网的能力</strong>（例如共享账本在局域网环境下的同步与发现）；以及下文所述由 Google 提供的分析与结算等服务所必需的网络通信。</li>
+      </ul>
+      <p>当前版本的应用安装包<strong>未声明麦克风（录音）权限</strong>。若未来版本提供语音记账并申请麦克风权限，我们将更新本政策并在应用内显著提示，您可在更新后再次查阅。</p>
+
+      <h2>三、数据存储与安全</h2>
+      <ul>
+        <li>记账、分类、账本等<strong>核心业务数据优先存储在您的设备本地</strong>数据库中。</li>
+        <li>请您妥善保管设备、系统锁屏密码及本应用内的应用锁（若您已开启），并谨慎分享备份文件，以防他人获取您的财务信息。</li>
+        <li>若您使用操作系统或第三方提供的<strong>云备份、换机迁移</strong>等功能，相关数据由该等系统或服务商按其政策处理，不在本政策单独承诺范围内。</li>
+      </ul>
+
+      <h2>四、第三方服务（Firebase 与 Google Play）</h2>
+      <p>为实现产品改进、稳定性保障与会员订阅，本应用接入了由 <strong>Google LLC</strong> 及其关联公司提供的下列服务（以您安装的版本为准）：</p>
+      <ul>
+        <li>
+          <strong>Firebase Analytics（Google Analytics for Firebase）</strong>：用于统计应用使用情况（例如功能使用频率、会话与设备层面的汇总指标），以帮助我们改进产品体验。该类服务可能处理去标识化或汇总形式的标识符与设备信息。说明请参阅
+          <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebase 隐私与安全说明</a> 及
+          <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google 隐私权政策</a>。
+        </li>
+        <li>
+          <strong>Firebase Crashlytics</strong>：用于收集<strong>崩溃与异常诊断信息</strong>（例如堆栈跟踪、设备型号、系统版本、应用版本等非财务内容），以便我们定位与修复缺陷。说明请参阅
+          <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebase 隐私与安全说明</a>。
+        </li>
+        <li>
+          <strong>Google Play 结算系统（Google Play Billing）</strong>：当您在应用内购买或订阅 Pro 等数字权益时，<strong>订单、付款与订阅状态由 Google Play 处理</strong>。我们可能从 Google 收到与交易相关的有限信息（例如是否已购买、订阅是否有效），用于在应用内解锁对应功能；我们不会通过 Google Play 获取您的完整银行卡号。请参阅
+          <a href="https://payments.google.com/privacypolicy.html" rel="noopener noreferrer">Google 付款隐私权声明</a> 及
+          <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google 隐私权政策</a>。
+        </li>
+      </ul>
+      <p>除法律法规要求或经您同意外，我们不会向第三方出售您的记账明细内容用于广告定向。Firebase 与 Crashlytics 所收集的数据类型与保留方式以 Google 披露为准；您可通过系统设置限制部分广告标识符相关能力（视设备与系统版本而定）。</p>
+
+      <h2>五、未成年人</h2>
+      <p>若您为未成年人，请在监护人指导下阅读本政策并在监护人同意后使用本应用。</p>
+
+      <h2>六、政策更新</h2>
+      <p>我们可能因功能调整、法律法规变化而修订本政策。更新后我们将在本页面修改「最近更新」日期；重大变更时还将通过应用内提示等合理方式告知。</p>
+
+      <h2>七、联系我们</h2>
+      <p>如对本政策或个人信息处理有任何疑问、投诉或建议，请通过邮件联系：<a href="mailto:zhengxyou@gmail.com">zhengxyou@gmail.com</a>。我们将在合理期限内答复。</p>
+    </article>
+
+    <article id="policy-en" lang="en" hidden>
+      <header>
+        <h1>Zhibo (智簿) — Privacy Policy</h1>
+        <p class="meta">Effective date: April 11, 2026 · Last updated: April 11, 2026</p>
+      </header>
+
+      <p>
+        Thank you for using <strong>Zhibo</strong> (“the App”). We respect your privacy. This policy describes how we collect, use, store, and protect information when you use the App. By using the App, you acknowledge that you have read and understood this policy. If you do not agree, please stop using the App.
+      </p>
+
+      <h2>1. Controller and scope</h2>
+      <p>
+        This policy applies to the Android application <strong>Zhibo</strong> distributed via Google Play or other channels (package name: <code>com.zhengxyou.aiautobookkeeping</code>).
+      </p>
+      <ul>
+        <li>Controller: ZHENG XIANGYOU</li>
+        <li>Contact: <a href="mailto:zhengxyou@gmail.com">zhengxyou@gmail.com</a></li>
+      </ul>
+
+      <h2>2. Information we process and Android permissions</h2>
+      <p>The App is built around <strong>local bookkeeping</strong>; core financial data is stored on your device by default. When you use certain features, we may access the following through system permissions:</p>
+      <ul>
+        <li><strong>Camera (CAMERA)</strong>: To attach photos to entries and to scan <strong>QR codes</strong> (for example, when joining or inviting others to a shared ledger). Images are processed on your device in connection with these features and are not used for unrelated purposes.</li>
+        <li><strong>Storage (READ_EXTERNAL_STORAGE, on some Android 12 and lower devices)</strong>: To read files you explicitly choose, such as <strong>import files</strong> (CSV, Excel) or <strong>images</strong>. We do not scan all files on your device.</li>
+        <li><strong>Notifications (POST_NOTIFICATIONS)</strong>: To deliver <strong>local reminders</strong> you enable (for example, budget, scheduled entries, to-dos, loan due dates, periodic reports). You can turn off notification permission in system settings.</li>
+        <li><strong>Network and Wi‑Fi (INTERNET, ACCESS_NETWORK_STATE, ACCESS_WIFI_STATE, CHANGE_WIFI_MULTICAST_STATE)</strong>: For features that require the internet or local network (for example, LAN sync for shared ledgers), and for the Google services described below.</li>
+      </ul>
+      <p>The current release <strong>does not declare the microphone (RECORD_AUDIO) permission</strong>. If a future version enables voice entry and requests microphone access, we will update this policy and notify you prominently in the App.</p>
+
+      <h2>3. Storage and security</h2>
+      <ul>
+        <li>Core bookkeeping data is stored <strong>locally on your device</strong> by default.</li>
+        <li>Please protect your device, screen lock, and the in-app lock (if enabled). Be careful when sharing backup files.</li>
+        <li>If you use OS or third-party <strong>cloud backup or device migration</strong>, those providers process data under their own policies.</li>
+      </ul>
+
+      <h2>4. Third-party services (Firebase and Google Play)</h2>
+      <p>To improve the product, maintain stability, and offer subscriptions, the App uses services provided by <strong>Google LLC</strong> and its affiliates (subject to the build you install):</p>
+      <ul>
+        <li>
+          <strong>Firebase Analytics (Google Analytics for Firebase)</strong>: Aggregated usage and diagnostics to understand how features are used. May involve app-instance identifiers and device-level data as described in
+          <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebase Privacy and Security</a> and
+          <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google’s Privacy Policy</a>.
+        </li>
+        <li>
+          <strong>Firebase Crashlytics</strong>: <strong>Crash and error reports</strong> (for example stack traces, device model, OS version, app version—<strong>not</strong> your ledger transaction content) to help us fix defects. See
+          <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebase Privacy and Security</a>.
+        </li>
+        <li>
+          <strong>Google Play Billing</strong>: In-app purchases and subscriptions are processed by <strong>Google Play</strong>. We may receive limited information from Google (for example whether a purchase is active) to unlock Pro features in the App; we do not receive your full payment card number through Google Play. See
+          <a href="https://payments.google.com/privacypolicy.html" rel="noopener noreferrer">Google Payments Privacy Notice</a> and
+          <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google’s Privacy Policy</a>.
+        </li>
+      </ul>
+      <p>We do not sell your ledger contents for ad profiling. The categories of data processed by Firebase and Crashlytics are governed by Google’s disclosures; depending on your device, you may limit certain advertising-related identifiers in system settings.</p>
+
+      <h2>5. Children</h2>
+      <p>If you are a minor, please use the App with a parent or guardian who has reviewed this policy.</p>
+
+      <h2>6. Changes</h2>
+      <p>We may update this policy for new features or legal requirements. We will change the “Last updated” date on this page and, where appropriate, notify you in the App.</p>
+
+      <h2>7. Contact</h2>
+      <p>For questions or requests regarding this policy or personal data, email <a href="mailto:zhengxyou@gmail.com">zhengxyou@gmail.com</a>. We will respond within a reasonable time.</p>
+    </article>
+  </div>
+
+  <script>
+    (function () {
+      var STORAGE_KEY = "zhibo_privacy_lang";
+
+      function browserPrefersZh() {
+        var list = navigator.languages && navigator.languages.length
+          ? navigator.languages
+          : [navigator.language || ""];
+        for (var i = 0; i < list.length; i++) {
+          if (/^zh/i.test(list[i])) return true;
+        }
+        return false;
+      }
+
+      function resolveLang() {
+        var params = new URLSearchParams(window.location.search);
+        var q = (params.get("lang") || "").toLowerCase();
+        if (q === "zh" || q === "en") return q;
+        try {
+          var stored = localStorage.getItem(STORAGE_KEY);
+          if (stored === "zh" || stored === "en") return stored;
+        } catch (e) {}
+        return browserPrefersZh() ? "zh" : "en";
+      }
+
+      function applyLang(lang) {
+        var zh = document.getElementById("policy-zh");
+        var en = document.getElementById("policy-en");
+        var btnZh = document.getElementById("btn-zh");
+        var btnEn = document.getElementById("btn-en");
+        var meta = document.getElementById("meta-desc");
+
+        zh.hidden = lang !== "zh";
+        en.hidden = lang !== "en";
+
+        if (lang === "zh") {
+          btnZh.setAttribute("aria-current", "true");
+          btnEn.removeAttribute("aria-current");
+        } else {
+          btnEn.setAttribute("aria-current", "true");
+          btnZh.removeAttribute("aria-current");
+        }
+
+        document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+        document.body.setAttribute("lang-flow", lang === "zh" ? "zh" : "en");
+
+        if (lang === "zh") {
+          document.title = "智簿 — 隐私权政策";
+          meta.setAttribute("content", "智簿（AI 记账）Android 应用的隐私权政策");
+        } else {
+          document.title = "Zhibo (智簿) — Privacy Policy";
+          meta.setAttribute("content", "Privacy policy for the Zhibo Android bookkeeping app");
+        }
+      }
+
+      function setLang(lang) {
+        try {
+          localStorage.setItem(STORAGE_KEY, lang);
+        } catch (e) {}
+        var url = new URL(window.location.href);
+        url.searchParams.set("lang", lang);
+        window.history.replaceState({}, "", url.pathname + url.search + url.hash);
+        applyLang(lang);
+      }
+
+      applyLang(resolveLang());
+
+      document.getElementById("btn-zh").addEventListener("click", function () {
+        setLang("zh");
+      });
+      document.getElementById("btn-en").addEventListener("click", function () {
+        setLang("en");
+      });
+    })();
+  </script>
+</body>
+</html>
