@@ -137,7 +137,7 @@
     <!-- zh-CN -->
     <article class="card lang-panel" data-lang="zh-CN" hidden>
       <h1>小目标 — 隐私权政策</h1>
-      <p class="updated">最近更新：2026-07-17</p>
+      <p class="updated">最近更新：2026-08-07</p>
       <p>欢迎您使用「小目标」（英文名：Small Goal，以下简称「本应用」）。我们重视您的个人信息与隐私保护。本政策说明在您使用本应用时，我们如何收集、使用、存储与保护相关信息。使用本应用即表示您已阅读并理解本政策。若您不同意，请停止使用本应用。</p>
 
       <h2>一、运营主体与适用范围</h2>
@@ -176,7 +176,35 @@
         <li>购买/订阅状态由 Google Play 管理；应用内仅保存用于解锁会员功能所必需的权益状态信息。</li>
       </ul>
 
-      <h2>四、第三方服务（Firebase、AdMob 与 Google Play）</h2>
+      <h2>四、数据保留</h2>
+      <p>本应用<strong>不在自有服务器上建立云端用户档案</strong>来长期保存您的打卡、训练计划等业务内容。各类数据的保留方式如下：</p>
+      <table>
+        <thead>
+          <tr><th>数据类型</th><th>保留方式与期限</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>目标、打卡、训练计划、角色、积分、奖品等本地业务数据</td><td>保留在您设备的本地数据库中，直至您<strong>卸载本应用</strong>、在 Android 系统设置中对本应用执行<strong>「清除存储空间 / 清除数据」</strong>，或通过应用内提供的删除功能删除相应条目。我们不会在卸载或清除后于自有服务器继续保留这些数据。</td></tr>
+          <tr><td>您导出的备份文件（JSON/ZIP 等）</td><td>由您自行保管；保留期限至您主动删除备份文件为止。我们不会自动上传或长期托管备份文件。</td></tr>
+          <tr><td>局域网同步副本</td><td>在您已配对的各台设备本地保留，直至您在对应设备上清除应用数据、卸载应用，或在应用内移除信任设备/停止同步。</td></tr>
+          <tr><td>Firebase Analytics / Crashlytics / Performance（仅在您同意后）</td><td>由 Google 按 Firebase 与 Google 隐私政策中的期限处理（例如汇总分析数据通常有有限保留期，崩溃日志用于缺陷修复后按服务商规则保留或删除）。详见 <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase 隐私与安全</a>。</td></tr>
+          <tr><td>AdMob 广告相关标识（免费版，视同意情况而定）</td><td>由 Google 及其广告合作伙伴按各自政策处理；保留期限以 Google 披露为准。</td></tr>
+          <tr><td>Google Play 订阅 / 购买记录</td><td>由 Google Play 按 Google 政策保留；应用内仅保存解锁会员功能所需的最小权益状态，直至卸载或清除应用数据。</td></tr>
+        </tbody>
+      </table>
+
+      <h2>五、数据删除</h2>
+      <p>本应用<strong>无需注册账号，也不提供由我们运营的云端数据存储</strong>，因此通常不存在「向我们申请删除云端账户」的流程。您可按以下方式删除或控制您的数据：</p>
+      <ul>
+        <li><strong>应用内逐项删除：</strong>您可在各功能界面删除单个目标、打卡记录、训练计划、角色、任务、奖品及相关附件（如自定义图片），具体以应用内提供的删除入口为准。</li>
+        <li><strong>删除本机全部应用数据（推荐用于彻底删除）：</strong>打开 Android <strong>系统设置 → 应用 → 小目标（Small Goal）→ 存储空间和缓存 → 清除存储空间 / 清除数据</strong>；或<strong>卸载本应用</strong>。上述操作将删除该设备上的本地数据库及与本应用关联的本地文件（不含您已自行保存到他处的备份文件）。</li>
+        <li><strong>备份文件：</strong>若您曾导出备份，请自行删除手机、电脑或云盘中保存的备份文件。</li>
+        <li><strong>局域网同步设备：</strong>请在每一台曾配对同步的设备上分别执行清除数据或卸载；并可在应用设置中移除信任设备，避免后续继续同步。</li>
+        <li><strong>第三方 SDK 数据：</strong>若您曾同意 Analytics / Crash / Performance 或广告相关收集，可在首次使用时选择拒绝，或通过 Android 系统限制广告跟踪（视系统版本而定）。如需就第三方汇总/诊断数据的处理提出问题，请发送邮件至 <a href="mailto:zhengxyou@gmail.com">zhengxyou@gmail.com</a>，注明应用名称、应用版本与问题说明；我们将协助说明可选操作，并配合 Google 等服务商的适用流程（我们无法直接删除 Google 服务器上的全部日志）。</li>
+        <li><strong>Google Play 交易记录：</strong>订阅与购买记录由 Google Play 管理，请通过 <a href="https://play.google.com/store/account/subscriptions" target="_blank" rel="noopener">Google Play 订阅管理</a> 或 Google 账户设置处理。</li>
+      </ul>
+      <p>若您无法自行完成上述操作，或对本机数据删除有疑问，请邮件联系 <a href="mailto:zhengxyou@gmail.com">zhengxyou@gmail.com</a>，我们将在合理期限内答复。</p>
+
+      <h2>六、第三方服务（Firebase、AdMob 与 Google Play）</h2>
       <p>为实现产品改进、稳定性保障、免费版广告展示与会员订阅，本应用接入了由 Google LLC 及其关联公司提供的下列服务（以您安装的版本及您是否同意为准）：</p>
       <ol>
         <li><strong>Firebase Analytics</strong>：统计应用使用情况（例如功能使用频率、会话与设备层面的汇总指标），以帮助改进产品体验。可能处理去标识化或汇总形式的标识符与设备信息。说明请参阅 <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase 隐私与安全</a> 及 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 隐私权政策</a>。</li>
@@ -188,17 +216,17 @@
       <p><strong>同意与拒绝：</strong>首次使用时，本应用会就 Analytics / Crash / Performance 等数据采集征求您的同意。若您选择不同意，我们将不初始化相应统计类 SDK，并按产品设计限制或关闭依赖同意的广告能力；您仍可使用本地核心功能。</p>
       <p>除法律法规要求或经您同意外，我们<strong>不会出售</strong>您的打卡、训练计划、积分等业务内容用于广告定向。第三方 SDK 所收集的数据类型与保留方式以 Google 等服务商披露为准。</p>
 
-      <h2>五、未成年人与家庭角色</h2>
+      <h2>七、未成年人与家庭角色</h2>
       <ul>
         <li>若您为未成年人，请在监护人指导下阅读本政策，并在监护人同意后使用本应用。</li>
         <li>本应用提供儿童模式与家庭多角色功能。儿童角色相关的昵称、任务、积分与兑换记录默认仅保存在本机；请监护人妥善管理设备与儿童模式退出验证。</li>
         <li>我们不会要求儿童创建云端账号，也不会主动向儿童索取可识别的个人联系方式。</li>
       </ul>
 
-      <h2>六、政策更新</h2>
+      <h2>八、政策更新</h2>
       <p>我们可能因功能调整、法律法规变化而修订本政策。更新后我们将在本页面修改「最近更新」日期；重大变更时还将通过应用内提示等合理方式告知。请您定期查阅本页面以了解最新内容。</p>
 
-      <h2>七、联系我们</h2>
+      <h2>九、联系我们</h2>
       <p>如对本政策或个人信息处理有任何疑问、投诉或建议，请通过邮件联系：<a href="mailto:zhengxyou@gmail.com">zhengxyou@gmail.com</a>。我们将在合理期限内答复。</p>
       <p class="footer">© Small Goal · Privacy Policy</p>
     </article>
@@ -206,7 +234,7 @@
     <!-- zh-TW -->
     <article class="card lang-panel" data-lang="zh-TW" hidden>
       <h1>小目標 — 隱私權政策</h1>
-      <p class="updated">最近更新：2026-07-17</p>
+      <p class="updated">最近更新：2026-08-07</p>
       <p>歡迎您使用「小目標」（英文名：Small Goal，以下簡稱「本應用」）。我們重視您的個人資訊與隱私保護。本政策說明在您使用本應用時，我們如何收集、使用、儲存與保護相關資訊。使用本應用即表示您已閱讀並理解本政策。若您不同意，請停止使用本應用。</p>
 
       <h2>一、營運主體與適用範圍</h2>
@@ -245,7 +273,35 @@
         <li>購買／訂閱狀態由 Google Play 管理；應用內僅儲存用於解鎖會員功能所必需的權益狀態資訊。</li>
       </ul>
 
-      <h2>四、第三方服務（Firebase、AdMob 與 Google Play）</h2>
+      <h2>四、資料保留</h2>
+      <p>本應用<strong>不在自有伺服器上建立雲端使用者檔案</strong>來長期保存您的打卡、訓練計畫等業務內容。各類資料的保留方式如下：</p>
+      <table>
+        <thead>
+          <tr><th>資料類型</th><th>保留方式與期限</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>目標、打卡、訓練計畫、角色、積分、獎品等本機業務資料</td><td>保留在您裝置的本機資料庫中，直至您<strong>解除安裝本應用</strong>、在 Android 系統設定中對本應用執行<strong>「清除儲存空間／清除資料」</strong>，或透過應用內提供的刪除功能刪除相應項目。我們不會在解除安裝或清除後於自有伺服器繼續保留這些資料。</td></tr>
+          <tr><td>您匯出的備份檔（JSON/ZIP 等）</td><td>由您自行保管；保留期限至您主動刪除備份檔為止。我們不會自動上傳或長期託管備份檔。</td></tr>
+          <tr><td>區域網路同步副本</td><td>在您已配對的各台裝置本機保留，直至您在對應裝置上清除應用資料、解除安裝，或在應用內移除信任裝置／停止同步。</td></tr>
+          <tr><td>Firebase Analytics / Crashlytics / Performance（僅在您同意後）</td><td>由 Google 依 Firebase 與 Google 隱私政策中的期限處理。詳見 <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase 隱私與安全</a>。</td></tr>
+          <tr><td>AdMob 廣告相關識別碼（免費版，視同意情況而定）</td><td>由 Google 及其廣告合作夥伴依各自政策處理；保留期限以 Google 揭露為準。</td></tr>
+          <tr><td>Google Play 訂閱／購買紀錄</td><td>由 Google Play 依 Google 政策保留；應用內僅保存解鎖會員功能所需的最小權益狀態，直至解除安裝或清除應用資料。</td></tr>
+        </tbody>
+      </table>
+
+      <h2>五、資料刪除</h2>
+      <p>本應用<strong>無需註冊帳號，也不提供由我們營運的雲端資料儲存</strong>，因此通常不存在「向我們申請刪除雲端帳戶」的流程。您可按以下方式刪除或控制您的資料：</p>
+      <ul>
+        <li><strong>應用內逐項刪除：</strong>您可在各功能介面刪除單個目標、打卡紀錄、訓練計畫、角色、任務、獎品及相關附件（如自訂圖片），具體以應用內提供的刪除入口為準。</li>
+        <li><strong>刪除本機全部應用資料（建議用於徹底刪除）：</strong>開啟 Android <strong>系統設定 → 應用程式 → 小目標（Small Goal）→ 儲存空間和快取 → 清除儲存空間／清除資料</strong>；或<strong>解除安裝本應用</strong>。上述操作將刪除該裝置上的本機資料庫及與本應用關聯的本機檔案（不含您已自行保存到他處的備份檔）。</li>
+        <li><strong>備份檔：</strong>若您曾匯出備份，請自行刪除手機、電腦或雲端中保存的備份檔。</li>
+        <li><strong>區域網路同步裝置：</strong>請在每一台曾配對同步的裝置上分別執行清除資料或解除安裝；並可在應用設定中移除信任裝置，避免後續繼續同步。</li>
+        <li><strong>第三方 SDK 資料：</strong>若您曾同意 Analytics / Crash / Performance 或廣告相關收集，可在首次使用時選擇拒絕，或透過 Android 系統限制廣告追蹤（視系統版本而定）。如需就第三方彙總／診斷資料的處理提出問題，請寄信至 <a href="mailto:zhengxyou@gmail.com">zhengxyou@gmail.com</a>，註明應用名稱、應用版本與問題說明；我們將協助說明可選操作，並配合 Google 等服務商的適用流程（我們無法直接刪除 Google 伺服器上的全部日誌）。</li>
+        <li><strong>Google Play 交易紀錄：</strong>訂閱與購買紀錄由 Google Play 管理，請透過 <a href="https://play.google.com/store/account/subscriptions" target="_blank" rel="noopener">Google Play 訂閱管理</a> 或 Google 帳戶設定處理。</li>
+      </ul>
+      <p>若您無法自行完成上述操作，或對本機資料刪除有疑問，請寄信聯絡 <a href="mailto:zhengxyou@gmail.com">zhengxyou@gmail.com</a>，我們將在合理期限內答覆。</p>
+
+      <h2>六、第三方服務（Firebase、AdMob 與 Google Play）</h2>
       <p>為實現產品改進、穩定性保障、免費版廣告展示與會員訂閱，本應用接入了由 Google LLC 及其關係企業提供的下列服務（以您安裝的版本及您是否同意為準）：</p>
       <ol>
         <li><strong>Firebase Analytics</strong>：統計應用使用情況（例如功能使用頻率、工作階段與裝置層面的彙總指標），以協助改進產品體驗。可能處理去識別化或彙總形式的識別碼與裝置資訊。說明請參閱 <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase 隱私與安全</a> 及 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 隱私權政策</a>。</li>
@@ -257,17 +313,17 @@
       <p><strong>同意與拒絕：</strong>首次使用時，本應用會就 Analytics / Crash / Performance 等資料蒐集徵求您的同意。若您選擇不同意，我們將不初始化相應統計類 SDK，並依產品設計限制或關閉依賴同意的廣告能力；您仍可使用本機核心功能。</p>
       <p>除法律法規要求或經您同意外，我們<strong>不會出售</strong>您的打卡、訓練計畫、積分等業務內容用於廣告定向。第三方 SDK 所收集的資料類型與保留方式以 Google 等服務商揭露為準。</p>
 
-      <h2>五、未成年人與家庭角色</h2>
+      <h2>七、未成年人與家庭角色</h2>
       <ul>
         <li>若您為未成年人，請在監護人指導下閱讀本政策，並在監護人同意後使用本應用。</li>
         <li>本應用提供兒童模式與家庭多角色功能。兒童角色相關的暱稱、任務、積分與兌換紀錄預設僅保存在本機；請監護人妥善管理裝置與兒童模式退出驗證。</li>
         <li>我們不會要求兒童建立雲端帳號，也不會主動向兒童索取可識別的個人聯絡方式。</li>
       </ul>
 
-      <h2>六、政策更新</h2>
+      <h2>八、政策更新</h2>
       <p>我們可能因功能調整、法律法規變化而修訂本政策。更新後我們將在本頁面修改「最近更新」日期；重大變更時還將透過應用內提示等合理方式告知。請您定期查閱本頁面以了解最新內容。</p>
 
-      <h2>七、聯絡我們</h2>
+      <h2>九、聯絡我們</h2>
       <p>如對本政策或個人資訊處理有任何疑問、投訴或建議，請透過郵件聯絡：<a href="mailto:zhengxyou@gmail.com">zhengxyou@gmail.com</a>。我們將在合理期限內答覆。</p>
       <p class="footer">© Small Goal · Privacy Policy</p>
     </article>
@@ -275,7 +331,7 @@
     <!-- en -->
     <article class="card lang-panel" data-lang="en" hidden>
       <h1>Small Goal — Privacy Policy</h1>
-      <p class="updated">Last updated: 2026-07-17</p>
+      <p class="updated">Last updated: 2026-08-07</p>
       <p>Welcome to Small Goal (Chinese name: 小目标; the “App”). We respect your privacy. This Policy explains how information is collected, used, stored, and protected when you use the App. By using the App, you acknowledge that you have read and understood this Policy. If you do not agree, please stop using the App.</p>
 
       <h2>1. Operator and Scope</h2>
@@ -314,7 +370,35 @@
         <li>Purchase/subscription status is managed by Google Play; the App only stores entitlement status needed to unlock premium features.</li>
       </ul>
 
-      <h2>4. Third-Party Services (Firebase, AdMob, and Google Play)</h2>
+      <h2>4. Data Retention</h2>
+      <p>The App <strong>does not maintain cloud user profiles on servers we operate</strong> to store your check-ins, training plans, or similar content long term. Retention works as follows:</p>
+      <table>
+        <thead>
+          <tr><th>Data type</th><th>How long it is kept</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Local app data (goals, check-ins, training plans, roles, points, prizes, etc.)</td><td>Stored in a local database on your device until you <strong>uninstall the App</strong>, use Android system settings to <strong>clear storage / clear data</strong> for the App, or delete individual items using in-app delete controls. We do not retain this data on our own servers after uninstall or clear-data.</td></tr>
+          <tr><td>Backup files you export (JSON/ZIP, etc.)</td><td>Kept only where you choose to store them, until you delete those files. We do not automatically upload or host backups.</td></tr>
+          <tr><td>LAN sync copies</td><td>Kept locally on each paired device until you clear app data, uninstall, remove trusted devices, or stop sync on that device.</td></tr>
+          <tr><td>Firebase Analytics / Crashlytics / Performance (only if you consent)</td><td>Handled by Google under Firebase and Google privacy policies (e.g., aggregated analytics and crash logs are kept for limited periods per Google’s disclosures). See <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy and Security</a>.</td></tr>
+          <tr><td>AdMob-related identifiers (free tier, depending on consent)</td><td>Handled by Google and ad partners under their policies; retention follows Google’s disclosures.</td></tr>
+          <tr><td>Google Play subscription / purchase records</td><td>Retained by Google Play under Google’s policies; the App stores only minimal entitlement status until uninstall or clear-data.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>5. Data Deletion</h2>
+      <p>The App <strong>does not require an account and does not offer cloud storage operated by us</strong>, so there is usually no “delete my cloud account” request process. You can delete or control your data as follows:</p>
+      <ul>
+        <li><strong>Delete items in the App:</strong> Delete individual goals, check-ins, training plans, roles, tasks, prizes, and attachments (such as custom images) using the delete options provided in each screen.</li>
+        <li><strong>Delete all local App data (recommended for full deletion):</strong> On Android, go to <strong>Settings → Apps → Small Goal → Storage → Clear storage / Clear data</strong>, or <strong>uninstall the App</strong>. This removes the local database and App-related files on that device (not backup files you saved elsewhere).</li>
+        <li><strong>Backup files:</strong> If you exported backups, delete those files from your device, computer, or cloud storage yourself.</li>
+        <li><strong>LAN-synced devices:</strong> Clear data or uninstall on each device that was paired; remove trusted devices in App settings to stop further sync.</li>
+        <li><strong>Third-party SDK data:</strong> If you consented to Analytics / Crash / Performance or ads, you can decline on first launch or limit ad tracking in Android settings (where available). To ask about aggregated/diagnostic data handled by third parties, email <a href="mailto:zhengxyou@gmail.com">zhengxyou@gmail.com</a> with the app name, version, and your question; we will explain available options and cooperate with applicable Google processes (we cannot directly erase all logs on Google’s servers).</li>
+        <li><strong>Google Play transactions:</strong> Subscriptions and purchases are managed by Google Play via <a href="https://play.google.com/store/account/subscriptions" target="_blank" rel="noopener">Google Play subscriptions</a> or your Google Account settings.</li>
+      </ul>
+      <p>If you cannot complete the steps above or have questions about local data deletion, contact <a href="mailto:zhengxyou@gmail.com">zhengxyou@gmail.com</a>. We will respond within a reasonable time.</p>
+
+      <h2>6. Third-Party Services (Firebase, AdMob, and Google Play)</h2>
       <p>To improve the product, maintain stability, show free-tier ads, and support subscriptions, the App integrates services provided by Google LLC and its affiliates (depending on your installed version and consent):</p>
       <ol>
         <li><strong>Firebase Analytics</strong>: measures app usage (e.g., feature frequency, session and device-level aggregated metrics) to improve product experience. May process de-identified or aggregated identifiers and device information. See <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy and Security</a> and the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
@@ -326,17 +410,17 @@
       <p><strong>Consent and decline:</strong> On first use, the App asks for consent regarding Analytics / Crash / Performance data collection. If you decline, we will not initialize the corresponding analytics SDKs and will limit or disable ad features that depend on consent, while local core features remain available.</p>
       <p>Except as required by law or with your consent, we <strong>do not sell</strong> your check-ins, training plans, points, or similar content for ad targeting. Data types and retention for third-party SDKs follow Google’s disclosures.</p>
 
-      <h2>5. Minors and Family Roles</h2>
+      <h2>7. Minors and Family Roles</h2>
       <ul>
         <li>If you are a minor, please read this Policy with a guardian and use the App only with guardian consent.</li>
         <li>The App provides child mode and multi-role family features. Nicknames, tasks, points, and redemptions for child roles are stored on device by default. Guardians should manage the device and child-mode exit verification.</li>
         <li>We do not require children to create cloud accounts and do not actively solicit personally identifiable contact details from children.</li>
       </ul>
 
-      <h2>6. Policy Updates</h2>
+      <h2>8. Policy Updates</h2>
       <p>We may update this Policy due to feature or legal changes. We will revise the “Last updated” date on this page; for material changes, we may also notify you reasonably in-app. Please check this page periodically.</p>
 
-      <h2>7. Contact Us</h2>
+      <h2>9. Contact Us</h2>
       <p>For questions, complaints, or suggestions about this Policy or personal information processing, email <a href="mailto:zhengxyou@gmail.com">zhengxyou@gmail.com</a>. We will respond within a reasonable time.</p>
       <p class="footer">© Small Goal · Privacy Policy</p>
     </article>
@@ -344,7 +428,7 @@
     <!-- ja -->
     <article class="card lang-panel" data-lang="ja" hidden>
       <h1>Small Goal — プライバシーポリシー</h1>
-      <p class="updated">最終更新日：2026-07-17</p>
+      <p class="updated">最終更新日：2026-08-07</p>
       <p>「Small Goal」（中国語名：小目标、以下「本アプリ」）をご利用いただきありがとうございます。当社はお客様のプライバシーを重視します。本ポリシーは、本アプリ利用時の情報の収集・利用・保存・保護について説明します。本アプリを利用することで、本ポリシーを読み理解したことになります。同意できない場合は利用を中止してください。</p>
 
       <h2>1. 運営者および適用範囲</h2>
@@ -383,7 +467,35 @@
         <li>購入／サブスクリプション状態は Google Play が管理し、アプリ内ではプレミアム機能解除に必要な権利状態のみを保持します。</li>
       </ul>
 
-      <h2>4. 第三者サービス（Firebase、AdMob、Google Play）</h2>
+      <h2>4. データの保持</h2>
+      <p>本アプリは<strong>自社サーバー上にクラウドユーザープロファイルを作成せず</strong>、チェックインやトレーニング計画等を長期保存しません。保持は次のとおりです。</p>
+      <table>
+        <thead>
+          <tr><th>データの種類</th><th>保持方法と期間</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>目標、チェックイン、トレーニング計画、ロール、ポイント、賞品等のローカルデータ</td><td>端末内データベースに保存され、<strong>アプリのアンインストール</strong>、Android 設定での<strong>「ストレージを消去／データを消去」</strong>、またはアプリ内の削除操作まで保持されます。アンインストールまたは消去後、当社サーバーには保持しません。</td></tr>
+          <tr><td>書き出したバックアップ（JSON/ZIP 等）</td><td>お客様が保管する限り保持され、削除するまで残ります。自動アップロードや当社による長期ホスティングは行いません。</td></tr>
+          <tr><td>LAN 同期コピー</td><td>ペアリング済み各端末のローカルに保持され、当該端末でデータ消去・アンインストール、信頼デバイス削除、同期停止まで残ります。</td></tr>
+          <tr><td>Firebase Analytics / Crashlytics / Performance（同意時のみ）</td><td>Google の Firebase／Google プライバシーポリシーに従い処理されます。詳細は <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase のプライバシーとセキュリティ</a> をご覧ください。</td></tr>
+          <tr><td>AdMob 関連識別子（無料版、同意状況による）</td><td>Google および広告パートナーのポリシーに従い処理されます。</td></tr>
+          <tr><td>Google Play の購入／サブスクリプション記録</td><td>Google Play が Google のポリシーに従って保持します。アプリ内には最小限の権利状態のみ保存されます。</td></tr>
+        </tbody>
+      </table>
+
+      <h2>5. データの削除</h2>
+      <p>本アプリは<strong>アカウント登録不要で、当社運営のクラウドストレージも提供しません</strong>。通常、「クラウドアカウント削除の申請」は不要です。削除方法は次のとおりです。</p>
+      <ul>
+        <li><strong>アプリ内での個別削除：</strong>各画面の削除機能で、目標、チェックイン、トレーニング計画、ロール、タスク、賞品、添付画像等を削除できます。</li>
+        <li><strong>端末内の全データ削除（完全削除に推奨）：</strong>Android の <strong>設定 → アプリ → Small Goal → ストレージ → ストレージを消去／データを消去</strong>、または<strong>アンインストール</strong>。当該端末のローカル DB と関連ファイルが削除されます（他の場所に保存したバックアップは除く）。</li>
+        <li><strong>バックアップファイル：</strong>書き出したバックアップは、端末・PC・クラウドからお客様自身が削除してください。</li>
+        <li><strong>LAN 同期端末：</strong>ペアリングした各端末でデータ消去またはアンインストールを行い、設定で信頼デバイスを削除してください。</li>
+        <li><strong>第三者 SDK データ：</strong>Analytics / Crash / Performance や広告に同意した場合、初回起動時に拒否するか、Android 設定で広告追跡を制限できます（端末により異なります）。第三者の集計／診断データについては <a href="mailto:zhengxyou@gmail.com">zhengxyou@gmail.com</a> までアプリ名・版・内容を記載してご連絡ください。可能な対応を案内し、Google 等の適用プロセスに協力します（Google サーバー上の全ログを直接削除することはできません）。</li>
+        <li><strong>Google Play の取引：</strong>購読・購入は <a href="https://play.google.com/store/account/subscriptions" target="_blank" rel="noopener">Google Play 購読管理</a> または Google アカウント設定で管理してください。</li>
+      </ul>
+      <p>上記操作が難しい場合やローカルデータ削除についてご不明な点は <a href="mailto:zhengxyou@gmail.com">zhengxyou@gmail.com</a> までご連絡ください。合理的な期間内に回答します。</p>
+
+      <h2>6. 第三者サービス（Firebase、AdMob、Google Play）</h2>
       <p>製品改善、安定性確保、無料版広告、会員サブスクリプションのため、Google LLC および関連会社の次のサービスを組み込みます（インストール版および同意状況により異なります）。</p>
       <ol>
         <li><strong>Firebase Analytics</strong>：機能利用頻度やセッション等の集計指標を測定し、体験改善に利用します。識別子や端末情報を非識別化／集計形で処理する場合があります。詳細は <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase のプライバシーとセキュリティ</a> および <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー</a> をご覧ください。</li>
@@ -395,17 +507,17 @@
       <p><strong>同意と拒否：</strong>初回起動時に Analytics／Crash／Performance 等のデータ収集について同意を求めます。拒否した場合、該当 SDK を初期化せず、同意依存の広告機能を制限／無効化します。ローカルのコア機能は利用可能です。</p>
       <p>法令上必要な場合または同意がある場合を除き、チェックイン・トレーニング計画・ポイント等内容を広告ターゲティング目的で<strong>販売しません</strong>。第三者 SDK のデータ種類・保持は Google 等の開示に従います。</p>
 
-      <h2>5. 未成年者と家族ロール</h2>
+      <h2>7. 未成年者と家族ロール</h2>
       <ul>
         <li>未成年の方は保護者と本ポリシーを確認し、保護者の同意のうえでご利用ください。</li>
         <li>子どもモードと複数ロール機能を提供します。子どもロールのニックネーム、タスク、ポイント、交換記録は原則端末内に保存されます。保護者は端末と退出認証を適切に管理してください。</li>
         <li>子どもにクラウドアカウント作成を求めず、識別可能な連絡先を子どもから積極的に収集しません。</li>
       </ul>
 
-      <h2>6. ポリシーの更新</h2>
+      <h2>8. ポリシーの更新</h2>
       <p>機能や法令の変更により本ポリシーを改定する場合があります。本ページの「最終更新日」を更新し、重要な変更時はアプリ内通知等で合理的にお知らせします。定期的にご確認ください。</p>
 
-      <h2>7. お問い合わせ</h2>
+      <h2>9. お問い合わせ</h2>
       <p>本ポリシーや個人情報の取扱いに関するご質問・苦情・ご提案は <a href="mailto:zhengxyou@gmail.com">zhengxyou@gmail.com</a> までご連絡ください。合理的な期間内に回答します。</p>
       <p class="footer">© Small Goal · Privacy Policy</p>
     </article>
@@ -413,7 +525,7 @@
     <!-- ko -->
     <article class="card lang-panel" data-lang="ko" hidden>
       <h1>Small Goal — 개인정보 처리방침</h1>
-      <p class="updated">최종 업데이트: 2026-07-17</p>
+      <p class="updated">최종 업데이트: 2026-08-07</p>
       <p>「Small Goal」(중국어명: 小目标, 이하 「본 앱」)을 이용해 주셔서 감사합니다. 당사는 개인정보와 프라이버시 보호를 중요하게 생각합니다. 본 방침은 본 앱 이용 시 정보를 어떻게 수집·이용·저장·보호하는지 설명합니다. 본 앱을 이용하면 본 방침을 읽고 이해한 것으로 간주됩니다. 동의하지 않으면 이용을 중단해 주세요.</p>
 
       <h2>1. 운영 주체 및 적용 범위</h2>
@@ -452,7 +564,35 @@
         <li>구매/구독 상태는 Google Play가 관리하며, 앱 내에는 프리미엄 기능 잠금 해제에 필요한 권한 상태만 저장합니다.</li>
       </ul>
 
-      <h2>4. 제3자 서비스(Firebase, AdMob, Google Play)</h2>
+      <h2>4. 데이터 보관</h2>
+      <p>본 앱은<strong> 자체 서버에 클라우드 사용자 프로필을 만들지 않으며</strong>, 체크인·훈련 계획 등을 장기 보관하지 않습니다. 보관 방식은 다음과 같습니다.</p>
+      <table>
+        <thead>
+          <tr><th>데이터 유형</th><th>보관 방식 및 기간</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>목표, 체크인, 훈련 계획, 역할, 포인트, 상품 등 로컬 데이터</td><td>기기 로컬 DB에 저장되며, <strong>앱 삭제</strong>, Android 설정에서 <strong>「저장공간 지우기/데이터 지우기」</strong>, 또는 앱 내 삭제 기능을 사용할 때까지 보관됩니다. 삭제 또는 데이터 지우기 후 자체 서버에는 보관하지 않습니다.</td></tr>
+          <tr><td>내보낸 백업 파일(JSON/ZIP 등)</td><td>사용자가 보관하는 동안만 유지되며, 사용자가 삭제할 때까지 남습니다. 자동 업로드나 장기 호스팅은 하지 않습니다.</td></tr>
+          <tr><td>LAN 동기화 사본</td><td>페어링된 각 기기 로컬에 보관되며, 해당 기기에서 데이터 지우기·삭제, 신뢰 기기 제거, 동기화 중지 시까지 유지됩니다.</td></tr>
+          <tr><td>Firebase Analytics / Crashlytics / Performance(동의 시)</td><td>Google의 Firebase/Google 개인정보처리방침에 따라 처리됩니다. 자세한 내용은 <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase 개인정보 및 보안</a>을 참고하세요.</td></tr>
+          <tr><td>AdMob 관련 식별자(무료 버전, 동의 여부에 따름)</td><td>Google 및 광고 파트너 정책에 따라 처리됩니다.</td></tr>
+          <tr><td>Google Play 구독/구매 기록</td><td>Google Play가 Google 정책에 따라 보관합니다. 앱에는 최소 권한 상태만 저장됩니다.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>5. 데이터 삭제</h2>
+      <p>본 앱은<strong> 계정 등록이 필요 없으며, 당사가 운영하는 클라우드 저장소도 제공하지 않습니다</strong>. 일반적으로 「클라우드 계정 삭제 신청」 절차는 없습니다. 삭제 방법은 다음과 같습니다.</p>
+      <ul>
+        <li><strong>앱 내 개별 삭제:</strong> 각 화면의 삭제 기능으로 목표, 체크인, 훈련 계획, 역할, 과제, 상품, 첨부 이미지 등을 삭제할 수 있습니다.</li>
+        <li><strong>기기 내 전체 데이터 삭제(완전 삭제 권장):</strong> Android <strong>설정 → 앱 → Small Goal → 저장공간 → 저장공간 지우기/데이터 지우기</strong> 또는 <strong>앱 삭제</strong>. 해당 기기의 로컬 DB 및 관련 파일이 삭제됩니다(다른 곳에 저장한 백업 제외).</li>
+        <li><strong>백업 파일:</strong> 내보낸 백업은 기기·PC·클라우드에서 사용자가 직접 삭제해 주세요.</li>
+        <li><strong>LAN 동기화 기기:</strong> 페어링된 각 기기에서 데이터 지우기 또는 앱 삭제를 수행하고, 설정에서 신뢰 기기를 제거하세요.</li>
+        <li><strong>제3자 SDK 데이터:</strong> Analytics/Crash/Performance 또는 광고에 동의한 경우, 최초 실행 시 거부하거나 Android 설정에서 광고 추적을 제한할 수 있습니다(기기에 따라 다름). 제3자 집계/진단 데이터 문의는 <a href="mailto:zhengxyou@gmail.com">zhengxyou@gmail.com</a>으로 앱 이름·버전·내용을 적어 연락해 주세요. 가능한 조치를 안내하고 Google 등의 해당 절차에 협력합니다(Google 서버의 모든 로그를 직접 삭제할 수는 없습니다).</li>
+        <li><strong>Google Play 거래:</strong> 구독·구매는 <a href="https://play.google.com/store/account/subscriptions" target="_blank" rel="noopener">Google Play 구독 관리</a> 또는 Google 계정 설정에서 관리하세요.</li>
+      </ul>
+      <p>위 절차를 스스로 수행하기 어렵거나 로컬 데이터 삭제에 대해 문의가 있으면 <a href="mailto:zhengxyou@gmail.com">zhengxyou@gmail.com</a>으로 연락해 주세요. 합리적인 기한 내에 답변드립니다.</p>
+
+      <h2>6. 제3자 서비스(Firebase, AdMob, Google Play)</h2>
       <p>제품 개선, 안정성, 무료 버전 광고, 구독을 위해 Google LLC 및 계열사의 다음 서비스를 연동합니다(설치된 버전 및 동의 여부에 따름).</p>
       <ol>
         <li><strong>Firebase Analytics</strong>: 기능 사용 빈도, 세션 등 집계 지표를 측정해 경험을 개선합니다. 비식별화/집계 형태의 식별자 및 기기 정보를 처리할 수 있습니다. 자세한 내용은 <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase 개인정보 및 보안</a>과 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a>을 참고하세요.</li>
@@ -464,17 +604,17 @@
       <p><strong>동의와 거부:</strong> 최초 사용 시 Analytics / Crash / Performance 등 데이터 수집에 대한 동의를 요청합니다. 거부하면 해당 SDK를 초기화하지 않고, 동의에 의존하는 광고 기능을 제한/비활성화합니다. 로컬 핵심 기능은 계속 사용할 수 있습니다.</p>
       <p>법령상 요구되거나 동의가 있는 경우를 제외하고, 체크인·훈련 계획·포인트 등 콘텐츠를 광고 타깃팅 목적으로 <strong>판매하지 않습니다</strong>. 제3자 SDK의 데이터 유형·보관은 Google 등의 공개 내용에 따릅니다.</p>
 
-      <h2>5. 미성년자 및 가족 역할</h2>
+      <h2>7. 미성년자 및 가족 역할</h2>
       <ul>
         <li>미성년자는 보호자와 함께 본 방침을 읽고 보호자 동의 후 이용해 주세요.</li>
         <li>아동 모드와 다중 역할 기능을 제공합니다. 아동 역할의 닉네임, 과제, 포인트, 교환 기록은 기본적으로 기기에만 저장됩니다. 보호자는 기기와 아동 모드 종료 인증을 관리해 주세요.</li>
         <li>아동에게 클라우드 계정 생성을 요구하지 않으며, 식별 가능한 연락처를 아동에게 적극적으로 요구하지 않습니다.</li>
       </ul>
 
-      <h2>6. 방침 업데이트</h2>
+      <h2>8. 방침 업데이트</h2>
       <p>기능 또는 법령 변경에 따라 본 방침을 개정할 수 있습니다. 본 페이지의 「최종 업데이트」 날짜를 수정하며, 중요한 변경 시 앱 내 안내 등 합리적 방식으로 고지할 수 있습니다. 주기적으로 확인해 주세요.</p>
 
-      <h2>7. 문의</h2>
+      <h2>9. 문의</h2>
       <p>본 방침 또는 개인정보 처리에 관한 문의·불만·제안은 <a href="mailto:zhengxyou@gmail.com">zhengxyou@gmail.com</a>으로 연락해 주세요. 합리적 기한 내에 답변드립니다.</p>
       <p class="footer">© Small Goal · Privacy Policy</p>
     </article>
