@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Luma 隐私政策 · Privacy Policy</title>
-  <meta name="description" content="Luma privacy policy — local-first memory journal. Moments stay on your device." />
+  <meta name="description" content="Luma privacy policy — memories stored on this device; vault backup only when you manually export." />
   <style>
     :root {
       --cream: #faf7f2;
@@ -133,11 +133,11 @@
 <body>
   <div class="wrap">
     <p class="brand">Luma</p>
-    <p class="tagline">Private memories, kept forever.</p>
+    <p class="tagline">Your memories are stored locally on this device.</p>
     <div class="meta">
-      <span class="pill">Local-first</span>
-      <span class="pill">On-device vault</span>
-      <span class="pill">No cloud sync</span>
+      <span class="pill">On-device</span>
+      <span class="pill">Manual export</span>
+      <span class="pill">No vault cloud sync</span>
     </div>
 
     <div class="lang" role="tablist" aria-label="Language">
@@ -151,11 +151,11 @@
       <p class="updated">生效日期：2026 年 8 月 9 日 · 适用于 Luma Android 应用（封闭测试 / Closed Beta）</p>
 
       <div class="card">
-        <p><strong>一句话原则：</strong>你的瞬间（文字与照片）默认只保存在你的设备上。Luma 不会将你的记忆库同步到我们的服务器，也不会把记忆内容用于广告。</p>
+        <p><strong>一句话原则：</strong>你的记忆（文字与照片）保存在本机设备上。记忆库不会自动云同步；仅在你主动导出时才会生成本地 <code>.luma</code> 备份文件。我们不会把记忆内容用于广告。封闭测试阶段可能使用稳定性诊断工具（见第 2.3 节），因此本政策<strong>不声称</strong>「零遥测」或「完全不收集任何数据」。</p>
       </div>
 
       <h2>1. 我们是谁</h2>
-      <p>Luma（应用包名：<code>com.zhengxyou.luma</code>）是一款本地优先的私人记忆应用，帮助你记录瞬间、浏览 Memory、整理合集，并在设备上生成回顾。</p>
+      <p>Luma（应用包名：<code>com.zhengxyou.luma</code>）是一款以本机存储为主的私人记忆应用，帮助你记录瞬间、浏览 Memory、整理合集，并在设备上生成回顾。</p>
       <p>开发者联系方式：<br />
         <a href="mailto:zhengxyou@gmail.com">zhengxyou@gmail.com</a></p>
 
@@ -166,9 +166,10 @@
         <li><strong>照片：</strong>你通过相机或相册添加的图片，保存在应用私有目录中（含压缩原图与缩略图）。</li>
         <li><strong>合集 / 章节：</strong>你创建或关联的合集信息。</li>
         <li><strong>偏好设置：</strong>主题、演示模式、新手引导完成状态等，使用本机 DataStore 存储。</li>
-        <li><strong>本地备份元数据：</strong>最近一次本地备份的时间、文件名、数量统计等（不含把备份上传到云端）。</li>
-        <li><strong>本地使用计数（可选诊断）：</strong>仅保存在本机的匿名计数，例如首次打开、创建瞬间次数、添加照片次数、创建合集次数、查看回顾次数、创建备份次数。这些数据<strong>不会上传</strong>，仅用于封闭测试时的本机调试面板。</li>
+        <li><strong>本地备份元数据：</strong>最近一次你手动导出备份的时间、文件名、数量统计等（应用不会自动把备份上传到云端）。</li>
+        <li><strong>本地使用计数：</strong>仅保存在本机的匿名计数，例如首次打开、创建瞬间次数、添加照片次数、创建合集次数、查看回顾次数、创建备份次数。这些计数<strong>不会由 Luma 上传</strong>，仅用于封闭测试时的本机调试面板。</li>
       </ul>
+      <p>存储方式说明：记忆库使用设备上的应用私有存储与本地数据库。当前版本<strong>没有</strong>应用层数据库加密（例如 SQLCipher）；保护主要依赖操作系统的应用沙箱与设备锁屏。</p>
 
       <h3>2.2 权限</h3>
       <ul>
@@ -178,13 +179,13 @@
       </ul>
 
       <h3>2.3 诊断与稳定性（第三方）</h3>
-      <p>为提升封闭测试阶段的稳定性，应用集成了 Google Firebase 相关服务，可能包括：</p>
+      <p>为提升封闭测试阶段的稳定性，应用集成了 Google Firebase 相关服务，包括：</p>
       <ul>
         <li><strong>Firebase Crashlytics：</strong>崩溃与错误诊断信息；</li>
         <li><strong>Firebase Performance：</strong>性能相关指标；</li>
         <li><strong>Firebase Analytics：</strong>应用使用情况相关的事件与设备/应用环境信息。</li>
       </ul>
-      <p>上述服务由 Google 按其隐私政策处理数据。它们<strong>不用于上传你的瞬间正文或照片内容作为记忆同步</strong>。你可以在 Google Play「数据安全」表单与 Firebase 控制台进一步核对具体采集项。</p>
+      <p>上述服务由 Google 按其隐私政策处理数据，可能经网络发送诊断或分析数据。它们<strong>不用于把你的瞬间正文或照片作为记忆库云同步</strong>。因此请勿将本应用理解为「零遥测」或「完全无数据收集」。你可以在 Google Play「数据安全」表单与 Firebase 控制台进一步核对具体采集项。</p>
       <p>相关说明：<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 隐私政策</a>。</p>
 
       <h2>3. 我们如何使用信息</h2>
@@ -197,14 +198,15 @@
 
       <h2>4. 我们不会做什么</h2>
       <ul>
-        <li>不会把你的记忆库云同步到 Luma 自有服务器（当前版本无账户体系、无云端记忆库）；</li>
+        <li>不会把你的记忆库自动云同步到 Luma 自有服务器（当前版本无账户体系、无云端记忆库）；</li>
         <li>不会出售你的瞬间内容；</li>
         <li>不会将瞬间正文/照片用于定向广告画像；</li>
-        <li>已关闭 Android 自动云备份对应用数据的默认备份（<code>allowBackup=false</code>），以降低记忆被系统云备份带走的风险。跨设备迁移请使用应用内「Backup &amp; Restore」导出的本地文件。</li>
+        <li>已关闭 Android 自动云备份对应用数据的默认备份（<code>allowBackup=false</code>），以降低记忆被系统云备份带走的风险。跨设备迁移请使用应用内「Backup &amp; Restore」<strong>手动导出</strong>的本地文件。</li>
       </ul>
+      <p class="note">说明：本节不表示「没有任何数据离开设备」。Firebase 诊断数据可能按第 2.3 节所述发送。</p>
 
-      <h2>5. 本地备份</h2>
-      <p>你可以通过应用创建 <code>.luma</code> 备份文件，并自行保存在你选择的位置（例如本机文件夹）。该文件可能包含瞬间、照片与设置。请妥善保管备份文件；任何能够访问该文件的人都可以还原其中的内容。</p>
+      <h2>5. 本地备份（仅手动导出）</h2>
+      <p>只有在你主动使用应用内备份功能时，才会创建 <code>.luma</code> 备份文件。该文件保存在你选择的位置（例如本机文件夹），可能包含瞬间、照片与设置。应用不会自动创建云端记忆库备份。文件离开本机仅发生在你自行分享或复制之后。请妥善保管；任何能够访问该文件的人都可以还原其中的内容。</p>
 
       <h2>6. 数据保存与删除</h2>
       <ul>
@@ -218,7 +220,7 @@
       <p>Luma 不面向 13 岁以下儿童。我们不会故意收集儿童的个人信息。若你认为儿童向我们提供了应删除的信息，请通过上文邮箱联系我们。</p>
 
       <h2>8. 国际传输</h2>
-      <p>你的记忆内容默认不离开设备。若启用/集成 Firebase 等 Google 服务，相关诊断数据可能在 Google 运营的基础设施中处理，具体以 Google 政策为准。</p>
+      <p>你的记忆库内容保存在本机，不会因 Luma 云同步而离开设备。集成 Firebase 等 Google 服务时，相关诊断或分析数据可能在 Google 运营的基础设施中处理，具体以 Google 政策为准。</p>
 
       <h2>9. 政策更新</h2>
       <p>我们可能更新本政策。更新后会修改「生效日期」，并在本页面发布最新版本。重大变更时，我们会尽可能通过应用内提示或测试渠道说明。</p>
@@ -233,11 +235,11 @@
       <p class="updated">Effective date: August 9, 2026 · Applies to the Luma Android app (Closed Beta)</p>
 
       <div class="card">
-        <p><strong>In short:</strong> Your moments (text and photos) stay on your device by default. Luma does not sync your vault to our servers, and does not use your memories for advertising.</p>
+        <p><strong>In short:</strong> Your memories (text and photos) are stored locally on this device. There is no automatic vault cloud sync; a local <code>.luma</code> backup is created only when you manually export. We do not use your memories for advertising. During closed beta the app may use stability diagnostics (see §2.3), so this policy does <strong>not</strong> claim “zero telemetry” or “no data collection.”</p>
       </div>
 
       <h2>1. Who we are</h2>
-      <p>Luma (package name: <code>com.zhengxyou.luma</code>) is a local-first private memory journal for capturing moments, browsing Memory, organizing collections, and viewing on-device reflections.</p>
+      <p>Luma (package name: <code>com.zhengxyou.luma</code>) is a private memory journal that stores your vault on this device—for capturing moments, browsing Memory, organizing collections, and viewing on-device reflections.</p>
       <p>Contact :<br />
         <a href="mailto:zhengxyou@gmail.com">zhengxyou@gmail.com</a></p>
 
@@ -248,9 +250,10 @@
         <li><strong>Photos:</strong> images you add via camera or gallery, stored in the app’s private storage (processed originals and thumbnails).</li>
         <li><strong>Collections / chapters:</strong> collections you create or attach.</li>
         <li><strong>Preferences:</strong> theme, demo mode, onboarding completion, stored locally via DataStore.</li>
-        <li><strong>Local backup metadata:</strong> last local backup time, file name, and counts (not a cloud upload of the backup).</li>
-        <li><strong>Local usage counters:</strong> anonymous on-device counters (e.g. first open, moments created, photos added, collections created, reflections viewed, backups created). These are <strong>not uploaded</strong> and are only for the on-device diagnostics panel during closed beta.</li>
+        <li><strong>Local backup metadata:</strong> time, file name, and counts from your last manual export (the app does not automatically upload backups to the cloud).</li>
+        <li><strong>Local usage counters:</strong> anonymous on-device counters (e.g. first open, moments created, photos added, collections created, reflections viewed, backups created). These counters are <strong>not uploaded by Luma</strong> and are only for the on-device diagnostics panel during closed beta.</li>
       </ul>
+      <p>Storage note: the vault uses on-device private app storage and a local database. The current version has <strong>no</strong> app-level database encryption (e.g. SQLCipher); protection relies mainly on the OS app sandbox and your device lock screen.</p>
 
       <h3>2.2 Permissions</h3>
       <ul>
@@ -260,13 +263,13 @@
       </ul>
 
       <h3>2.3 Diagnostics (third parties)</h3>
-      <p>To improve stability during closed beta, the app may include Google Firebase services such as:</p>
+      <p>To improve stability during closed beta, the app includes Google Firebase services such as:</p>
       <ul>
         <li><strong>Firebase Crashlytics</strong> — crash and error diagnostics;</li>
         <li><strong>Firebase Performance</strong> — performance metrics;</li>
         <li><strong>Firebase Analytics</strong> — app usage events and device/app environment data.</li>
       </ul>
-      <p>These services are operated by Google under their policies. They are <strong>not used to sync your moment text or photos as a cloud vault</strong>. See also the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+      <p>These services are operated by Google under their policies and may send diagnostic or analytics data over the network. They are <strong>not used to sync your moment text or photos as a cloud vault</strong>. Do not treat Luma as “zero telemetry” or “no data collection.” See also the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
 
       <h2>3. How we use information</h2>
       <ul>
@@ -278,14 +281,15 @@
 
       <h2>4. What we do not do</h2>
       <ul>
-        <li>We do not cloud-sync your vault to Luma-operated servers (no account / no cloud vault in the current version);</li>
+        <li>We do not automatically cloud-sync your vault to Luma-operated servers (no account / no cloud vault in the current version);</li>
         <li>We do not sell your moment content;</li>
         <li>We do not use moment text/photos for advertising profiles;</li>
-        <li>Android Auto Backup for app data is disabled (<code>allowBackup=false</code>). Use in-app Backup &amp; Restore for intentional transfers.</li>
+        <li>Android Auto Backup for app data is disabled (<code>allowBackup=false</code>). Use in-app Backup &amp; Restore to <strong>manually export</strong> a local file for intentional transfers.</li>
       </ul>
+      <p class="note">Note: this section does not mean “nothing ever leaves the device.” Firebase diagnostics may be sent as described in §2.3.</p>
 
-      <h2>5. Local backups</h2>
-      <p>You may create a <code>.luma</code> backup file and store it wherever you choose. It may contain moments, photos, and settings. Anyone with access to that file can restore its contents—keep it safe.</p>
+      <h2>5. Local backups (manual export only)</h2>
+      <p>A <code>.luma</code> backup file is created only when you use the in-app backup export. You choose where to store it. It may contain moments, photos, and settings. Luma does not automatically create a cloud vault backup. The file leaves this device only if you share or copy it yourself. Anyone with access to that file can restore its contents—keep it safe.</p>
 
       <h2>6. Retention and deletion</h2>
       <ul>
@@ -299,7 +303,7 @@
       <p>Luma is not directed to children under 13. We do not knowingly collect personal information from children. Contact us if you believe we should delete such information.</p>
 
       <h2>8. International processing</h2>
-      <p>Your vault content stays on device by default. Diagnostic data processed by Google Firebase may be handled on Google infrastructure per Google’s policies.</p>
+      <p>Your vault content is stored on this device and is not moved by Luma cloud sync. Diagnostic or analytics data processed by Google Firebase may be handled on Google infrastructure per Google’s policies.</p>
 
       <h2>9. Changes</h2>
       <p>We may update this policy and will revise the effective date on this page. For material changes during testing, we will try to notify via the app or tester channels.</p>
@@ -309,7 +313,7 @@
     </section>
 
     <div class="foot">
-      © Luma · Local-first memories · This page is a static policy document for hosting.
+      © Luma · Stored on this device · Manual vault export · This page is a static policy document for hosting.
     </div>
   </div>
 
