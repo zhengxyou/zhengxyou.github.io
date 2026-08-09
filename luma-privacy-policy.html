@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Luma 隐私政策 · Privacy Policy</title>
+  <meta name="description" content="Luma privacy policy — local-first memory journal. Moments stay on your device." />
+  <style>
+    :root {
+      --cream: #faf7f2;
+      --ink: #2c2623;
+      --muted: #7c726a;
+      --primary: #4a5d4e;
+      --primary-soft: #e8efe9;
+      --border: #e8e1d5;
+      --card: #ffffff;
+      --terracotta: #c0855f;
+      --danger: #b54a3c;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #f3ebe0 0%, transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, #e8efe9 0%, transparent 50%),
+        var(--cream);
+      color: var(--ink);
+      line-height: 1.65;
+    }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 22px 80px;
+    }
+    .brand {
+      font-family: Georgia, "Times New Roman", "Songti SC", serif;
+      font-size: 2.4rem;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      margin: 0 0 6px;
+      color: var(--ink);
+    }
+    .tagline {
+      color: var(--terracotta);
+      font-style: italic;
+      font-size: 0.95rem;
+      margin: 0 0 28px;
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+    .pill {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--primary);
+      background: var(--primary-soft);
+      border: 1px solid #c5d2c7;
+      border-radius: 999px;
+      padding: 4px 10px;
+    }
+    .lang {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    .lang button {
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--muted);
+      border-radius: 12px;
+      padding: 8px 14px;
+      font-size: 0.85rem;
+      cursor: pointer;
+    }
+    .lang button.active {
+      color: var(--ink);
+      border-color: var(--primary);
+      background: var(--primary-soft);
+      font-weight: 600;
+    }
+    .panel { display: none; }
+    .panel.active { display: block; }
+    h1 {
+      font-family: Georgia, "Songti SC", serif;
+      font-size: 1.65rem;
+      font-weight: 400;
+      margin: 0 0 8px;
+    }
+    .updated {
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-bottom: 28px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px 18px 14px;
+      margin: 0 0 22px;
+      box-shadow: 0 1px 0 rgba(44, 38, 35, 0.04);
+    }
+    .card strong { color: var(--primary); }
+    h2 {
+      font-size: 1.05rem;
+      margin: 28px 0 10px;
+      color: var(--primary);
+      letter-spacing: 0.02em;
+    }
+    p, li { font-size: 0.95rem; color: var(--ink); }
+    p { margin: 0 0 12px; }
+    ul { margin: 0 0 12px; padding-left: 1.2rem; }
+    li { margin-bottom: 6px; }
+    a { color: var(--primary); }
+    .foot {
+      margin-top: 40px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    .note {
+      color: var(--danger);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="brand">Luma</p>
+    <p class="tagline">Private memories, kept forever.</p>
+    <div class="meta">
+      <span class="pill">Local-first</span>
+      <span class="pill">On-device vault</span>
+      <span class="pill">No cloud sync</span>
+    </div>
+
+    <div class="lang" role="tablist" aria-label="Language">
+      <button type="button" class="active" data-lang="zh" aria-selected="true">中文</button>
+      <button type="button" data-lang="en" aria-selected="false">English</button>
+    </div>
+
+    <!-- ========== 中文 ========== -->
+    <section id="zh" class="panel active" lang="zh-CN">
+      <h1>隐私政策</h1>
+      <p class="updated">生效日期：2026 年 8 月 9 日 · 适用于 Luma Android 应用（封闭测试 / Closed Beta）</p>
+
+      <div class="card">
+        <p><strong>一句话原则：</strong>你的瞬间（文字与照片）默认只保存在你的设备上。Luma 不会将你的记忆库同步到我们的服务器，也不会把记忆内容用于广告。</p>
+      </div>
+
+      <h2>1. 我们是谁</h2>
+      <p>Luma（应用包名：<code>com.zhengxyou.luma</code>）是一款本地优先的私人记忆应用，帮助你记录瞬间、浏览 Memory、整理合集，并在设备上生成回顾。</p>
+      <p>开发者联系方式：<br />
+        <a href="mailto:zhengxyou@gmail.com">zhengxyou@gmail.com</a></p>
+
+      <h2>2. 我们处理哪些信息</h2>
+      <h3>2.1 保存在你设备上的内容（核心记忆库）</h3>
+      <ul>
+        <li><strong>瞬间内容：</strong>你写下的文字、心情/标签、日期时间等元数据。</li>
+        <li><strong>照片：</strong>你通过相机或相册添加的图片，保存在应用私有目录中（含压缩原图与缩略图）。</li>
+        <li><strong>合集 / 章节：</strong>你创建或关联的合集信息。</li>
+        <li><strong>偏好设置：</strong>主题、演示模式、新手引导完成状态等，使用本机 DataStore 存储。</li>
+        <li><strong>本地备份元数据：</strong>最近一次本地备份的时间、文件名、数量统计等（不含把备份上传到云端）。</li>
+        <li><strong>本地使用计数（可选诊断）：</strong>仅保存在本机的匿名计数，例如首次打开、创建瞬间次数、添加照片次数、创建合集次数、查看回顾次数、创建备份次数。这些数据<strong>不会上传</strong>，仅用于封闭测试时的本机调试面板。</li>
+      </ul>
+
+      <h3>2.2 权限</h3>
+      <ul>
+        <li><strong>相机：</strong>仅在你主动拍摄瞬间照片时使用。</li>
+        <li><strong>存储 / 媒体访问（系统选择器）：</strong>仅在你选择相册图片或导出/导入本地 <code>.luma</code> 备份文件时使用。</li>
+        <li><strong>网络：</strong>应用声明了网络权限，主要用于第三方诊断 SDK（见下文）。记忆库本身不依赖云同步。</li>
+      </ul>
+
+      <h3>2.3 诊断与稳定性（第三方）</h3>
+      <p>为提升封闭测试阶段的稳定性，应用集成了 Google Firebase 相关服务，可能包括：</p>
+      <ul>
+        <li><strong>Firebase Crashlytics：</strong>崩溃与错误诊断信息；</li>
+        <li><strong>Firebase Performance：</strong>性能相关指标；</li>
+        <li><strong>Firebase Analytics：</strong>应用使用情况相关的事件与设备/应用环境信息。</li>
+      </ul>
+      <p>上述服务由 Google 按其隐私政策处理数据。它们<strong>不用于上传你的瞬间正文或照片内容作为记忆同步</strong>。你可以在 Google Play「数据安全」表单与 Firebase 控制台进一步核对具体采集项。</p>
+      <p>相关说明：<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 隐私政策</a>。</p>
+
+      <h2>3. 我们如何使用信息</h2>
+      <ul>
+        <li>在设备上展示、搜索、整理你的瞬间与合集；</li>
+        <li>在设备上计算回顾（Reflection）摘要；</li>
+        <li>支持你导出 / 导入本地 <code>.luma</code> 备份包；</li>
+        <li>用诊断数据改进稳定性与性能（不出售记忆内容）。</li>
+      </ul>
+
+      <h2>4. 我们不会做什么</h2>
+      <ul>
+        <li>不会把你的记忆库云同步到 Luma 自有服务器（当前版本无账户体系、无云端记忆库）；</li>
+        <li>不会出售你的瞬间内容；</li>
+        <li>不会将瞬间正文/照片用于定向广告画像；</li>
+        <li>已关闭 Android 自动云备份对应用数据的默认备份（<code>allowBackup=false</code>），以降低记忆被系统云备份带走的风险。跨设备迁移请使用应用内「Backup &amp; Restore」导出的本地文件。</li>
+      </ul>
+
+      <h2>5. 本地备份</h2>
+      <p>你可以通过应用创建 <code>.luma</code> 备份文件，并自行保存在你选择的位置（例如本机文件夹）。该文件可能包含瞬间、照片与设置。请妥善保管备份文件；任何能够访问该文件的人都可以还原其中的内容。</p>
+
+      <h2>6. 数据保存与删除</h2>
+      <ul>
+        <li>记忆库数据保存在你的设备上，保存期限由你决定。</li>
+        <li>你可以在应用内使用「Delete All Data」清除本地记忆库相关数据（演示数据关闭/清空逻辑以应用内说明为准）。</li>
+        <li>你也可以通过系统设置清除应用数据，或卸载应用以删除应用私有存储中的内容。</li>
+        <li>若你曾把 <code>.luma</code> 备份复制到其他位置，需自行删除这些副本。</li>
+      </ul>
+
+      <h2>7. 儿童隐私</h2>
+      <p>Luma 不面向 13 岁以下儿童。我们不会故意收集儿童的个人信息。若你认为儿童向我们提供了应删除的信息，请通过上文邮箱联系我们。</p>
+
+      <h2>8. 国际传输</h2>
+      <p>你的记忆内容默认不离开设备。若启用/集成 Firebase 等 Google 服务，相关诊断数据可能在 Google 运营的基础设施中处理，具体以 Google 政策为准。</p>
+
+      <h2>9. 政策更新</h2>
+      <p>我们可能更新本政策。更新后会修改「生效日期」，并在本页面发布最新版本。重大变更时，我们会尽可能通过应用内提示或测试渠道说明。</p>
+
+      <h2>10. 联系我们</h2>
+      <p>如对本政策或数据处理有疑问，请联系：<a href="mailto:zhengxyou@gmail.com">zhengxyou@gmail.com</a></p>
+    </section>
+
+    <!-- ========== English ========== -->
+    <section id="en" class="panel" lang="en">
+      <h1>Privacy Policy</h1>
+      <p class="updated">Effective date: August 9, 2026 · Applies to the Luma Android app (Closed Beta)</p>
+
+      <div class="card">
+        <p><strong>In short:</strong> Your moments (text and photos) stay on your device by default. Luma does not sync your vault to our servers, and does not use your memories for advertising.</p>
+      </div>
+
+      <h2>1. Who we are</h2>
+      <p>Luma (package name: <code>com.zhengxyou.luma</code>) is a local-first private memory journal for capturing moments, browsing Memory, organizing collections, and viewing on-device reflections.</p>
+      <p>Contact :<br />
+        <a href="mailto:zhengxyou@gmail.com">zhengxyou@gmail.com</a></p>
+
+      <h2>2. Information we process</h2>
+      <h3>2.1 On-device vault content</h3>
+      <ul>
+        <li><strong>Moments:</strong> text you write, feelings/tags, timestamps, and related metadata.</li>
+        <li><strong>Photos:</strong> images you add via camera or gallery, stored in the app’s private storage (processed originals and thumbnails).</li>
+        <li><strong>Collections / chapters:</strong> collections you create or attach.</li>
+        <li><strong>Preferences:</strong> theme, demo mode, onboarding completion, stored locally via DataStore.</li>
+        <li><strong>Local backup metadata:</strong> last local backup time, file name, and counts (not a cloud upload of the backup).</li>
+        <li><strong>Local usage counters:</strong> anonymous on-device counters (e.g. first open, moments created, photos added, collections created, reflections viewed, backups created). These are <strong>not uploaded</strong> and are only for the on-device diagnostics panel during closed beta.</li>
+      </ul>
+
+      <h3>2.2 Permissions</h3>
+      <ul>
+        <li><strong>Camera:</strong> used only when you choose to capture a photo for a moment.</li>
+        <li><strong>Storage / media (system pickers):</strong> used when you pick gallery images or export/import a local <code>.luma</code> backup file.</li>
+        <li><strong>Internet:</strong> declared mainly for diagnostic SDKs described below. The vault does not require cloud sync.</li>
+      </ul>
+
+      <h3>2.3 Diagnostics (third parties)</h3>
+      <p>To improve stability during closed beta, the app may include Google Firebase services such as:</p>
+      <ul>
+        <li><strong>Firebase Crashlytics</strong> — crash and error diagnostics;</li>
+        <li><strong>Firebase Performance</strong> — performance metrics;</li>
+        <li><strong>Firebase Analytics</strong> — app usage events and device/app environment data.</li>
+      </ul>
+      <p>These services are operated by Google under their policies. They are <strong>not used to sync your moment text or photos as a cloud vault</strong>. See also the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+
+      <h2>3. How we use information</h2>
+      <ul>
+        <li>To show, search, and organize your moments and collections on device;</li>
+        <li>To compute Reflection summaries on device;</li>
+        <li>To let you export/import local <code>.luma</code> backups;</li>
+        <li>To improve stability and performance via diagnostics (we do not sell your memories).</li>
+      </ul>
+
+      <h2>4. What we do not do</h2>
+      <ul>
+        <li>We do not cloud-sync your vault to Luma-operated servers (no account / no cloud vault in the current version);</li>
+        <li>We do not sell your moment content;</li>
+        <li>We do not use moment text/photos for advertising profiles;</li>
+        <li>Android Auto Backup for app data is disabled (<code>allowBackup=false</code>). Use in-app Backup &amp; Restore for intentional transfers.</li>
+      </ul>
+
+      <h2>5. Local backups</h2>
+      <p>You may create a <code>.luma</code> backup file and store it wherever you choose. It may contain moments, photos, and settings. Anyone with access to that file can restore its contents—keep it safe.</p>
+
+      <h2>6. Retention and deletion</h2>
+      <ul>
+        <li>Vault data remains on your device for as long as you keep it.</li>
+        <li>Use in-app “Delete All Data” to clear local vault-related data (see in-app copy for demo-mode behavior).</li>
+        <li>You may also clear app data in system settings or uninstall the app.</li>
+        <li>Copies of <code>.luma</code> backups stored elsewhere must be deleted by you.</li>
+      </ul>
+
+      <h2>7. Children’s privacy</h2>
+      <p>Luma is not directed to children under 13. We do not knowingly collect personal information from children. Contact us if you believe we should delete such information.</p>
+
+      <h2>8. International processing</h2>
+      <p>Your vault content stays on device by default. Diagnostic data processed by Google Firebase may be handled on Google infrastructure per Google’s policies.</p>
+
+      <h2>9. Changes</h2>
+      <p>We may update this policy and will revise the effective date on this page. For material changes during testing, we will try to notify via the app or tester channels.</p>
+
+      <h2>10. Contact</h2>
+      <p>Questions: <a href="mailto:zhengxyou@gmail.com">zhengxyou@gmail.com</a></p>
+    </section>
+
+    <div class="foot">
+      © Luma · Local-first memories · This page is a static policy document for hosting.
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var buttons = document.querySelectorAll(".lang button");
+      var panels = {
+        zh: document.getElementById("zh"),
+        en: document.getElementById("en")
+      };
+      buttons.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var lang = btn.getAttribute("data-lang");
+          buttons.forEach(function (b) {
+            b.classList.toggle("active", b === btn);
+            b.setAttribute("aria-selected", b === btn ? "true" : "false");
+          });
+          Object.keys(panels).forEach(function (key) {
+            panels[key].classList.toggle("active", key === lang);
+          });
+          document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
